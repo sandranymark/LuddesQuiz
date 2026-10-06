@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ljusquiz – Åk 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="quiz-container">
+
+        <!-- STARTSIDA -->
+        <section id="start-screen" class="screen">
+
+            <div class="emoji">💡</div>
+
+            <h1>Ljus & Reflektion</h1>
+
+            <p class="subtitle">
+                Quiz inför fysikprovet – årskurs 8
+            </p>
+
+            <div class="info-box">
+                <p>📚 <strong>20 frågor</strong> per omgång</p>
+                <p>🎲 Frågorna slumpas varje gång</p>
+                <p>🪞 Reflektion och speglar</p>
+                <p>🔍 Brytning och linser</p>
+                <p>👁️ Ögat och synfel</p>
+                <p>🌈 Färger och spektrum</p>
+                <p>☀️ UV och ozonskiktet</p>
+                <p>⚛️ Elektromagnetisk strålning</p>
+            </div>
+
+            <button id="start-button" class="main-button">
+                Starta quiz 🚀
+            </button>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz-screen" class="screen hidden">
+
+            <div class="quiz-header">
+
+                <div>
+                    Fråga
+                    <strong>
+                        <span id="question-number">1</span>
+                        /
+                        <span id="total-questions">20</span>
+                    </strong>
+                </div>
+
+                <div>
+                    Rätt:
+                    <strong id="score">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+
+            <div class="question-card">
+
+                <div id="category" class="category"></div>
+
+                <h2 id="question-text"></h2>
+
+                <!-- Här hamnar eventuella ritbilder -->
+                <div id="question-image"></div>
+
+                <!-- Svarsalternativen -->
+                <div id="answers" class="answers"></div>
+
+                <!-- Feedback -->
+                <div id="feedback" class="feedback hidden"></div>
+
+                <button id="next-button" class="next-button hidden">
+                    Nästa fråga →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTAT -->
+        <section id="result-screen" class="screen hidden">
+
+            <div id="result-emoji" class="emoji">
+                🎉
+            </div>
+
+            <h1>Quizet är klart!</h1>
+
+            <div class="result-score">
+                <span id="final-score">0</span>
+                <span class="result-divider">/</span>
+                <span id="final-total">20</span>
+            </div>
+
+            <p id="percentage"></p>
+
+            <p id="result-message" class="result-message"></p>
+
+            <button id="restart-button" class="main-button">
+                🔄 Kör igen
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        Ljus & fysik – träningsquiz för åk 8
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
